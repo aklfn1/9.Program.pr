@@ -8,6 +8,7 @@ https://www.w3schools.com/python/python_conditions.asp
 
 3. Python teorija. Python programmēšanas pamati. Cikls for. https://clevercode.lv
 https://clevercode.lv/theory/document/23
+
 4. Programmēšana II. Objektorientēta programmēšana un ārējās bibliotēkas. Teorija un pašpārbaude, darbs ar datnēm.  https://skolo.lv
 https://skolo.lv/mod/hvp/view.php?id=22846278&lang=en#h5pbookid=135153&section=top&chapter=h5p-interactive-book-chapter-396861fb-3e0e-4d3b-9f4d-8e27ecca8d50 
 
