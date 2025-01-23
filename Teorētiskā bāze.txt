@@ -1,8 +1,8 @@
-﻿1. Python cikli. While cikls. www.w3schools.com
+﻿1.  While cikli. Python cikli. www.w3schools.com
 https://www.w3schools.com/python/python_while_loops.asp
 
 
-2. Python sazarotie algoritmi. Python if, elif, else nosacījumi. www.w3schools.com
+2.  Python if, elif, else nosacījumi. Python sazarotie algoritmi. www.w3schools.com
 https://www.w3schools.com/python/python_conditions.asp
 
 
@@ -12,23 +12,27 @@ https://clevercode.lv/theory/document/23
 https://skolo.lv/mod/hvp/view.php?id=22846278&lang=en#h5pbookid=135153&section=top&chapter=h5p-interactive-book-chapter-396861fb-3e0e-4d3b-9f4d-8e27ecca8d50 
 
 
-5. Programmēšanas pamati ar valodu Python. (8.) Saraksti. 
+5. (8.) Saraksti. Programmēšanas pamati ar valodu Python. 
 http://home.lu.lv/~janiszu/courses/python/python3.pdf 
 
 
-6. Python Random modulis. Python random shuffle() metode. https://www.w3schools.com. https://www.w3schools.com/python/ref_random_shuffle.asp
+6. Python random shuffle() metode.  Python Random modulis. https://www.w3schools.com. 
+https://www.w3schools.com/python/ref_random_shuffle.asp
 
 
-7. Failu metodes. https://www.w3schools.com. https://www.w3schools.com/python/python_ref_file.asp
+7. Failu metodes. Python Atsauces.  https://www.w3schools.com. 
+https://www.w3schools.com/python/python_ref_file.asp
 
 
 8. Datu sakārtošana. https://stackoverflow.com 
 https://stackoverflow.com/questions/74250612/how-to-sort-data-inside-text-file-in-accending-order-in-python 
+
+
 9. Informācijas pievienošana datnei. https://www.tutorialspoint.com/ 
 https://www.tutorialspoint.com/how-do-you-append-to-a-file-with-python
 
 
-10. Dažādi iekavu veidi. https://discovery.cs.illinois.edu/
+10. Dažādi iekavu veidi. Datu zinātnes rokasgrāmata. https://discovery.cs.illinois.edu/
 https://discovery.cs.illinois.edu/guides/Python-Fundamentals/brackets/ 
 
 
