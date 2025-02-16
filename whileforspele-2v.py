@@ -181,7 +181,7 @@ while True:
             for y in x["atbV"]: 
                 st.write(y)
                 st.write()
-            atbilde=st.text_input("Atbilde (a, b, c vai d) :", key="atbilde").lower()
+            atbilde=st.text_input("Atbilde (a, b, c vai d) :", key="atbilde2").lower()
             st.write()
             
 # x tiek izmantots, lai no vārdnīcas izvēlētos tieši 1 no rindkopām ar jautājumu, atbilžu variantu un atbildi. 
@@ -191,7 +191,7 @@ while True:
 
             while atbilde not in["a","b","c", "d"]:
                 st.write(f"\n Atbilde nav pieņemta.")
-                atbilde=st.text_input("Atbilde (a, b, c vai d) :", key="atbilde").lower()
+                atbilde=st.text_input("Atbilde (a, b, c vai d) :", key="atbilde1").lower()
 
             if atbilde==(x["atbilde"]):
                 rezultats1+=1
@@ -248,13 +248,13 @@ while True:
             for y in x["atbV"]:
                 st.write(y)
                 st.write()
-            atbilde=st.text_input("Atbilde (a, b, c vai d) :", key="atbilde").lower()
+            atbilde=st.text_input("Atbilde (a, b, c vai d) :", key="atbilde3").lower()
             st.write()
             
             
             while atbilde not in["a","b","c", "d"]:
                 st.write(f"\n Atbilde nav pieņemta.")
-                atbilde=st.text_input("Atbilde (a, b, c vai d) :", key="atbilde").lower()
+                atbilde=st.text_input("Atbilde (a, b, c vai d) :", key="atbilde4").lower()
 
             if atbilde==(x["atbilde"]):
                 rezultats2+=1
