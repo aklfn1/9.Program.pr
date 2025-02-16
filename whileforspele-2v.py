@@ -159,8 +159,8 @@ while True:
 
 
     st.write("Sveiki! Lai piedalītos spēlē par python programmēšanas valodas cikliem  'while'  vai 'for' , lūdzu vispirms ievadi savu vārdu un klasi.")
-    vards=(st.text_input("Vārds : "))
-    klase=(st.text_input("Klase : "))
+    vards=st.text_input("Vārds : ")
+    klase=st.text_input("Klase : ")
 
     izv=st.text_input("Vai vēlies atbildēt uz jautājumiem par 'while' ciklu vai par 'for' ciklu? (1, 2)")
     while  izv != "1" and izv!= "2" :
@@ -181,7 +181,7 @@ while True:
             for y in x["atbV"]: 
                 st.write(y)
                 st.write()
-            atbilde=(st.text_input("Atbilde (a, b, c vai d) :")).lower()
+            atbilde=st.text_input("Atbilde (a, b, c vai d) :").lower()
             st.write()
             
 # x tiek izmantots, lai no vārdnīcas izvēlētos tieši 1 no rindkopām ar jautājumu, atbilžu variantu un atbildi. 
@@ -191,7 +191,7 @@ while True:
 
             while atbilde not in["a","b","c", "d"]:
                 st.write(f"\n Atbilde nav pieņemta.")
-                atbilde=(st.text_input("Atbilde (a, b, c vai d) :")).lower()
+                atbilde=st.text_input("Atbilde (a, b, c vai d) :").lower()
 
             if atbilde==(x["atbilde"]):
                 rezultats1+=1
@@ -248,13 +248,13 @@ while True:
             for y in x["atbV"]:
                 st.write(y)
                 st.write()
-            atbilde=(st.text_input("Atbilde (a, b, c vai d) :")).lower()
+            atbilde=st.text_input("Atbilde (a, b, c vai d) :").lower()
             st.write()
             
             
             while atbilde not in["a","b","c", "d"]:
                 st.write(f"\n Atbilde nav pieņemta.")
-                atbilde=(st.text_input("Atbilde (a, b, c vai d) :")).lower()
+                atbilde=st.text_input("Atbilde (a, b, c vai d) :").lower()
 
             if atbilde==(x["atbilde"]):
                 rezultats2+=1
