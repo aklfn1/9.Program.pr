@@ -159,12 +159,12 @@ while True:
 
 
     st.write("Sveiki! Lai piedalītos spēlē par python programmēšanas valodas cikliem  'while'  vai 'for' , lūdzu vispirms ievadi savu vārdu un klasi.")
-    vards=st.text_input("Vārds : ")
-    klase=st.text_input("Klase : ")
+    vards=st.text_input("Vārds : " , key="vards")
+    klase=st.text_input("Klase : ", key="klase")
 
     izv=st.text_input("Vai vēlies atbildēt uz jautājumiem par 'while' ciklu vai par 'for' ciklu? (1, 2)")
     while  izv != "1" and izv!= "2" :
-        izv=st.text_input("Vai vēlies atbildēt uz jautājumiem par 'while' ciklu vai par 'for' ciklu? (1, 2) : ")
+        izv=st.text_input("Vai vēlies atbildēt uz jautājumiem par 'while' ciklu vai par 'for' ciklu? (1, 2) : ", key="izv")
         st.write()
 
 # and- loģiskais operators, lai izmantotu 2 nosacījumus vienlaicīgi
@@ -181,7 +181,7 @@ while True:
             for y in x["atbV"]: 
                 st.write(y)
                 st.write()
-            atbilde=st.text_input("Atbilde (a, b, c vai d) :").lower()
+            atbilde=st.text_input("Atbilde (a, b, c vai d) :", key="atbilde").lower()
             st.write()
             
 # x tiek izmantots, lai no vārdnīcas izvēlētos tieši 1 no rindkopām ar jautājumu, atbilžu variantu un atbildi. 
@@ -191,7 +191,7 @@ while True:
 
             while atbilde not in["a","b","c", "d"]:
                 st.write(f"\n Atbilde nav pieņemta.")
-                atbilde=st.text_input("Atbilde (a, b, c vai d) :").lower()
+                atbilde=st.text_input("Atbilde (a, b, c vai d) :", key="atbilde").lower()
 
             if atbilde==(x["atbilde"]):
                 rezultats1+=1
@@ -248,13 +248,13 @@ while True:
             for y in x["atbV"]:
                 st.write(y)
                 st.write()
-            atbilde=st.text_input("Atbilde (a, b, c vai d) :").lower()
+            atbilde=st.text_input("Atbilde (a, b, c vai d) :", key="atbilde").lower()
             st.write()
             
             
             while atbilde not in["a","b","c", "d"]:
                 st.write(f"\n Atbilde nav pieņemta.")
-                atbilde=st.text_input("Atbilde (a, b, c vai d) :").lower()
+                atbilde=st.text_input("Atbilde (a, b, c vai d) :", key="atbilde").lower()
 
             if atbilde==(x["atbilde"]):
                 rezultats2+=1
@@ -293,7 +293,7 @@ while True:
             st.write("Diemžēl tu neiekļuvi top 10!") 
             break
                 
-    velreiz=st.text_input("Vai vēlies pārtraukt programmu vai spēlēt vēlreiz? (1, 2) : \n")
+    velreiz=st.text_input("Vai vēlies pārtraukt programmu vai spēlēt vēlreiz? (1, 2) : \n", key="velreiz")
     if velreiz!="2" :
               break
 
