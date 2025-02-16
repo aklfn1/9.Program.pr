@@ -1,5 +1,9 @@
 
+import streamlit as st
 
+st.set_page_config(page_title="while-for-apmspele", layout="wide")
+
+st.write("Viss darbojas")
 
 rezultatiwhile=open('rezultatiwhile.txt', 'a')
 
