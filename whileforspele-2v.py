@@ -158,7 +158,7 @@ while True:
 
 
 
-    print("Sveiki! Lai piedalītos spēlē par python programmēšanas valodas cikliem  'while'  vai 'for' , lūdzu vispirms ievadi savu vārdu un klasi.")
+    st.write("Sveiki! Lai piedalītos spēlē par python programmēšanas valodas cikliem  'while'  vai 'for' , lūdzu vispirms ievadi savu vārdu un klasi.")
     vards=(st.text_input("Vārds : "))
     klase=(st.text_input("Klase : "))
 
