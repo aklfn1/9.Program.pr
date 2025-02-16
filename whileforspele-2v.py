@@ -159,30 +159,30 @@ while True:
 
 
     print("Sveiki! Lai piedalītos spēlē par python programmēšanas valodas cikliem  'while'  vai 'for' , lūdzu vispirms ievadi savu vārdu un klasi.")
-    vards=(input("Vārds : "))
-    klase=(input("Klase : "))
+    vards=(st.text_input("Vārds : "))
+    klase=(st.text_input("Klase : "))
 
-    izv=input("Vai vēlies atbildēt uz jautājumiem par 'while' ciklu vai par 'for' ciklu? (1, 2)")
+    izv=st.text_input("Vai vēlies atbildēt uz jautājumiem par 'while' ciklu vai par 'for' ciklu? (1, 2)")
     while  izv != "1" and izv!= "2" :
-        izv=input("Vai vēlies atbildēt uz jautājumiem par 'while' ciklu vai par 'for' ciklu? (1, 2) : ")
-        print()
+        izv=st.text_input("Vai vēlies atbildēt uz jautājumiem par 'while' ciklu vai par 'for' ciklu? (1, 2) : ")
+        st.write()
 
 # and- loģiskais operators, lai izmantotu 2 nosacījumus vienlaicīgi
 
     if izv=="1":
-        print("Tu piedalies spēle par python ciklu 'while'. Tev tiks uzdoti 10 jautājumi.")
-        print("Atbildi uz jautājumiem ar \033[1mvienīgi\033[0m  a, b, c vai d.")
-        print()
+        st.write("Tu piedalies spēle par python ciklu 'while'. Tev tiks uzdoti 10 jautājumi.")
+        st.write("Atbildi uz jautājumiem ar \033[1mvienīgi\033[0m  a, b, c vai d.")
+        st.write()
 
 #  \033[1mvienīgi\033[0m - izmantots, lai vārds 'vienīgi' tiktu izcelts.
 
         for x in whilejaut:
-            print("\033[1;34m" + x["jautajums"], "\n \n" + "\033[0m")
+            st.write("\033[1;34m" + x["jautajums"], "\n \n" + "\033[0m")
             for y in x["atbV"]: 
-                print(y)
-                print()
-            atbilde=(input("Atbilde (a, b, c vai d) :")).lower()
-            print()
+                st.write(y)
+                st.write()
+            atbilde=(st.text_input("Atbilde (a, b, c vai d) :")).lower()
+            st.write()
             
 # x tiek izmantots, lai no vārdnīcas izvēlētos tieši 1 no rindkopām ar jautājumu, atbilžu variantu un atbildi. 
 # {x['jautajums']} ir izmantots, lai no šīs rindkopas izvadītu jautājumu.
@@ -190,14 +190,14 @@ while True:
 
 
             while atbilde not in["a","b","c", "d"]:
-                print(f"\n Atbilde nav pieņemta.")
-                atbilde=(input("Atbilde (a, b, c vai d) :")).lower()
+                st.write(f"\n Atbilde nav pieņemta.")
+                atbilde=(st.text_input("Atbilde (a, b, c vai d) :")).lower()
 
             if atbilde==(x["atbilde"]):
                 rezultats1+=1
 
-        print(" \n \n \033[1;35m " +"🎉 Apsveicu,", vards , "tu ieguvi" , rezultats1, "/10 punktus! 🎉 " +"\033[0m")
-        print("\n")
+        st.write(" \n \n \033[1;35m " +"🎉 Apsveicu,", vards , "tu ieguvi" , rezultats1, "/10 punktus! 🎉 " +"\033[0m")
+        st.write("\n")
 
 # not in- kamēr atbilde nav viena no iekavās minētajām, izvada tekstu
 
@@ -223,11 +223,11 @@ while True:
        
         for vieta, linija in enumerate(rezultatikartoti[:10], start=1):
                 if vards in linija and klase in linija:
-                    print("\033[1;31m"+"Apsveicu," ,vards,", Tu iekļuvi top 10! Tev ir" , vieta,". vieta!"+"\033[0m \n")
+                    st.write("\033[1;31m"+"Apsveicu," ,vards,", Tu iekļuvi top 10! Tev ir" , vieta,". vieta!"+"\033[0m \n")
                     break
                 
         else: 
-            print("Diemžēl tu neiekļuvi top 10!")   
+            st.write("Diemžēl tu neiekļuvi top 10!")   
             break
 
 
@@ -239,28 +239,28 @@ while True:
 
 
     elif izv=="2" :
-        print("Tu piedalies spēle par python ciklu 'for'. Tev tiks uzdoti 10 jautājumi.")
-        print("Atbildi uz jautājumiem ar \033[1mvienīgi\033[0m  a, b, c vai d.")
-        print()
+        st.write("Tu piedalies spēle par python ciklu 'for'. Tev tiks uzdoti 10 jautājumi.")
+        st.write("Atbildi uz jautājumiem ar \033[1mvienīgi\033[0m  a, b, c vai d.")
+        st.write()
         
         for x in forjaut:
-            print("\033[1;34m" + x["jautajums"] , "\n \n" + "\033[0m")
+            st.write("\033[1;34m" + x["jautajums"] , "\n \n" + "\033[0m")
             for y in x["atbV"]:
-                print(y)
-                print()
-            atbilde=(input("Atbilde (a, b, c vai d) :")).lower()
-            print()
+                st.write(y)
+                st.write()
+            atbilde=(st.text_input("Atbilde (a, b, c vai d) :")).lower()
+            st.write()
             
             
             while atbilde not in["a","b","c", "d"]:
-                print(f"\n Atbilde nav pieņemta.")
-                atbilde=(input("Atbilde (a, b, c vai d) :")).lower()
+                st.write(f"\n Atbilde nav pieņemta.")
+                atbilde=(st.text_input("Atbilde (a, b, c vai d) :")).lower()
 
             if atbilde==(x["atbilde"]):
                 rezultats2+=1
 
-        print(" \n \n \033[1;35m "+"🎉 Apsveicu,", vards , "tu ieguvi" , rezultats2, "/10 punktus! 🎉 "+"\033[0m")
-        print("\n")
+        st.write(" \n \n \033[1;35m "+"🎉 Apsveicu,", vards , "tu ieguvi" , rezultats2, "/10 punktus! 🎉 "+"\033[0m")
+        st.write("\n")
         
         
         
@@ -286,14 +286,14 @@ while True:
         
         for vieta, linija in enumerate(rezultatikartoti2[:10], start=1):
                 if vards in linija and klase in linija:
-                    print("\033[1;31m"+"Apsveicu," ,vards,", Tu iekļuvi top 10! Tev ir" , vieta,". vieta!"+"\033[0m \n")
+                    st.write("\033[1;31m"+"Apsveicu," ,vards,", Tu iekļuvi top 10! Tev ir" , vieta,". vieta!"+"\033[0m \n")
                     break
                 
         else: 
-            print("Diemžēl tu neiekļuvi top 10!") 
+            st.write("Diemžēl tu neiekļuvi top 10!") 
             break
                 
-    velreiz=input("Vai vēlies pārtraukt programmu vai spēlēt vēlreiz? (1, 2) : \n")
+    velreiz=st.text_input("Vai vēlies pārtraukt programmu vai spēlēt vēlreiz? (1, 2) : \n")
     if velreiz!="2" :
               break
 
