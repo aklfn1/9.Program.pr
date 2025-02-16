@@ -11,7 +11,7 @@ rezultatifor=open('rezultatifor.txt', 'a')
 
 import random
 
-while True:
+
     rezultats1=int(0)
     rezultats2=int(0)
     
@@ -293,9 +293,7 @@ while True:
             st.write("Diemžēl tu neiekļuvi top 10!") 
             break
                 
-    velreiz=st.text_input("Vai vēlies pārtraukt programmu vai spēlēt vēlreiz? (1, 2) : \n", key="velreiz")
-    if velreiz!="2" :
-              break
+ 
 
 
 
