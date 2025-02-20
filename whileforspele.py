@@ -1,8 +1,5 @@
 
-from flask import Flask, request, jsonify
-import os
 
-programma=Flask("whileforspele")
 
 rezultatiwhile=open('rezultatiwhile.txt', 'a')
 
@@ -298,8 +295,6 @@ while True:
 
 
 
-
-programma.run(debug=false, host='0.0.0.0')
 
 
 
