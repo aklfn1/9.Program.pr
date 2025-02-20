@@ -1,5 +1,8 @@
 
+from flask import Flask, request, jsonify
+import os
 
+programma=Flask("whileforspele")
 
 rezultatiwhile=open('rezultatiwhile.txt', 'a')
 
@@ -155,8 +158,8 @@ while True:
 
 
     print("Sveiki! Lai piedalītos spēlē par python programmēšanas valodas cikliem  'while'  vai 'for' , lūdzu vispirms ievadi savu vārdu un klasi.")
-    vards=(input("Vārds : "))
-    klase=(input("Klase : "))
+    vards=input("Vārds : ")
+    klase=input("Klase : ")
 
     izv=input("Vai vēlies atbildēt uz jautājumiem par 'while' ciklu vai par 'for' ciklu? (1, 2)")
     while  izv != "1" and izv!= "2" :
@@ -296,7 +299,7 @@ while True:
 
 
 
-   
+programma.run(debug=false, host='0.0.0.0')
 
 
 
