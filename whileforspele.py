@@ -1,4 +1,8 @@
 
+from flask import Flask, request, jsonify
+import os
+
+programma=Flask("whileforspele")
 
 rezultatiwhile=open('rezultatiwhile.txt', 'a')
 
@@ -292,6 +296,10 @@ while True:
     if velreiz!="2" :
               break
 
+
+
+
+programma.run(debug=false, host='0.0.0.0')
 
 
 
